@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,600');
+
+:root{
+    --white: #FFF;
+    --green: #0F9;
+    --black: #444;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0 0 0.5rem 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+    font-size: 1.2rem;
+  
+}
+
+
+h1{
+    font-size: 5rem;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    outline: 3px solid var(--white);
+    outline-offset: .25em;
+    display: inline-block;
+    margin: 0.5em 0 0.5em;
+}
+
+h1 span{
+    font-weight: 300;
+}
+
+p span{
+    color: var(--green);
+}
+
+
+h2{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: .7em 1.7em;
+    background: var(--green);
+    color: var(--black);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.hero{
+    background-color: var(--black);
+    background-image:url(//unsplash.it/1000/600);
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding: 1em;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sales-points {
+    padding: 4vh 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+
+.sales-point{
+    flex-basis: 30%;
+}
+
+
+@media (min-width:900px) {
+   .sales-points{
+        flex-direction: row;
+   }
+}
+
+.cta{
+    
+    background-image: url(//unsplash.it/600/500);
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding: 10vh 0;
+    color: var(--white);
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.cta-text {
+    flex-basis: 100%;
+    padding: 0 2em;
+
+    @media (min-width:900px) {
+         flex-basis: 50%;  
+     }
+}
+
+
